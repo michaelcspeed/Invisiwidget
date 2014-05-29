@@ -14,14 +14,18 @@
         android:theme="@style/AppTheme" >
         <receiver android:name="MyWidgetProvider" >
             <intent-filter>
-                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="com.speed.invisiwidget.MyWidgetProvider.ACTION_WIDGET_OPEN_APP" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_provider" />
         </receiver>
+        <activity android:name="WidgetConfigure" android:exported="true"></activity>
     </application>
 
 </manifest>

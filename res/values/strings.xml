@@ -2,4 +2,6 @@
 
     <string name="app_name">InvisiWidget</string>
 
+    <string name="empty">EMPTY</string>
+
 </resources>
